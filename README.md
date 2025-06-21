@@ -1,3 +1,37 @@
+Achmad Royhan Abdillah (3012310003)
+Nabila Rana Pradipta (3012310028)
+
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FilmController;
+use App\Http\Controllers\GameController; 
+
+Route::get('/', function () {
+    return redirect()->route('films.index');
+});
+
+Route::resource('films', FilmController::class);
+Route::resource('games', GameController::class);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
